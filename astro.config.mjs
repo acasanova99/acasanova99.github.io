@@ -5,18 +5,21 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
     site: 'https://acasanova99.github.io',
-    base: 'hackbook',
+    base: '/',
 	integrations: [
 		starlight({
-			title: 'Hackbook',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/acasanova99' }],
+      title: 'Hackbook',
+			social: [
+                { icon: 'github', label: 'GitHub', href: 'https://github.com/acasanova99' }
+            ],
+            logo: {
+                src: './src/assets/black_druider.svg',
+                replacesTitle: false,
+            },
 			sidebar: [
 				{
 					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					autogenerate: {directory: 'guides'}
 				},
 				{
 					label: 'Reference',
