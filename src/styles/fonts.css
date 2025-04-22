@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Hack';
+  src: url('/fonts/Hack/HackNerdFont-Regular.woff2') format('woff2'),
+       url('/fonts/Hack/HackNerdFont-Regular.woff') format('woff'),
+       url('/fonts/Hack/HackNerdFont-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: url('/fonts/Hack/HackNerdFont-Italic.woff2') format('woff2'),
+       url('/fonts/Hack/HackNerdFont-Italic.woff') format('woff'),
+       url('/fonts/Hack/HackNerdFont-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: url('/fonts/Hack/HackNerdFont-Bold.woff2') format('woff2'),
+       url('/fonts/Hack/HackNerdFont-Bold.woff') format('woff'),
+       url('/fonts/Hack/HackNerdFont-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: url('/fonts/Hack/HackNerdFont-BoldItalic.woff2') format('woff2'),
+       url('/fonts/Hack/HackNerdFont-BoldItalic.woff') format('woff'),
+       url('/fonts/Hack/HackNerdFont-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
