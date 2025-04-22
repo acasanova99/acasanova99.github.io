@@ -25,6 +25,10 @@ export default defineConfig({
 					autogenerate: { directory: 'reference' },
 				},
 			],
+             customCss: [
+                './src/styles/fonts.css',
+                './src/styles/custom.css',
+              ],
 		}),
 	],
 });
