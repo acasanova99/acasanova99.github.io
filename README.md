@@ -17,7 +17,7 @@ npm run dev
 
 After a dependency upgrade, `npm install` updates both `node_modules` and `package-lock.json`. Editing `package.json` alone does not install the new versions. Keep the regenerated lockfile with the dependency changes.
 
-Open the local URL printed by Astro. The root page redirects to `/en/`; use the language selector to switch to Spanish.
+Open the local URL printed by Astro. English is served directly at `/`, with no language prefix or redirect page. Spanish is served at `/es/`; use the language selector to switch languages.
 
 To build and preview the static site:
 
@@ -28,16 +28,16 @@ npm run preview
 
 ## Beginner guide
 
-- English: `/en/pentesting/`
+- English: `/pentesting/`
 - Spanish: `/es/pentesting/`
 
-The guide covers prerequisites, setting up a lab, a first assessment, and writing a useful finding. Its Markdown files are `src/content/docs/en/pentesting/index.md` and `src/content/docs/es/pentesting/index.md`. Add related pages inside those `pentesting/` directories to include them in the sidebar automatically.
+The guide covers prerequisites, setting up a lab, a first assessment, and writing a useful finding. Its Markdown files are `src/content/docs/pentesting/index.md` and `src/content/docs/es/pentesting/index.md`. Add related pages inside those `pentesting/` directories to include them in the sidebar automatically.
 
 The homepages and beginner guide are translated. The Google Dorks page is currently available in English; Starlight provides fallback content for missing translations.
 
 ## Adding content
 
-Write the English page first, then add an equivalent Spanish page at the same relative path under `es/`. Every document in `src/content/docs/` must begin with YAML frontmatter:
+Write the English page directly inside `src/content/docs/`, then add an equivalent Spanish page at the same relative path under `src/content/docs/es/`. For example, `pentesting/index.md` and `es/pentesting/index.md` are translations of the same page. Do not add an `en/` directory: English is configured as Starlight's root locale. Every document in `src/content/docs/` must begin with YAML frontmatter:
 
 ```yaml
 ---

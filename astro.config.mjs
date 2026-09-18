@@ -8,9 +8,9 @@ export default defineConfig({
     integrations: [
         starlight({
             title: 'Hackbook',
-            defaultLocale: 'en',
+            defaultLocale: 'root',
             locales: {
-                en: {label: 'English', lang: 'en'},
+                root: {label: 'English', lang: 'en'},
                 es: {label: 'Español', lang: 'es'},
             },
             favicon: '/favicon/favicon.svg',
